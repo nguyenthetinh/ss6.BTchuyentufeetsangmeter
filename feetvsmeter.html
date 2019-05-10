@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>feet</label><br><br>
+<input type="number" placeholder="feet" oninput="feet(this.value)" ><br><br>
+<label>meter</label><br><br>
+<input type="number" placeholder="meter" oninput="meter(this.value)"><br><br>
+<p>ketqua: <span id="rs"></span></p>
+<script>
+    function feet(f) {
+        f=parseFloat(f)
+        document.getElementById("rs").innerHTML=0.3005*f +" "+" meter"
+    }
+    function meter(m) {
+        m=parseFloat(m)
+        document.getElementById("rs").innerHTML=3.279*m +" " +" feet"
+    }
+</script>
+
+</body>
+</html>
